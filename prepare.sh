@@ -1,4 +1,5 @@
 #!/bin/sh
 whoami
 pwd
-env | cut -c1-20
+ls -l /var/run/docker.sock
+env | cut -d= -f1
